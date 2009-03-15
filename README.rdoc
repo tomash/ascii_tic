@@ -12,10 +12,10 @@ Check out lib/ascii_tic.rb for module that's used to extend String class on load
 
 == Example
 
->> "zażółć gęślą jaźń".to_ascii_brutal
-=> "zazolc gesla jazn"
->> "zażółć gęślą jaźń".to_ascii_brutal.to_permalink
-=> "zazolc-gesla-jazn"
+  >> "zażółć gęślą jaźń".to_ascii_brutal
+  => "zazolc gesla jazn"
+  >> "zażółć gęślą jaźń".to_ascii_brutal.to_permalink
+  => "zazolc-gesla-jazn"
 
 == Copyright
 
