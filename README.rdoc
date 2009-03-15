@@ -1,0 +1,22 @@
+= AsciiTic
+
+A Rails plugin for extending String with "simplyfying" (thus ascetic) operations.
+
+== About 
+
+Check out lib/ascii_tic.rb for module that's used to extend String class on load. Current methods:
+
+* strip_html -- self-explanatory
+* to_ascii_brutal -- convert diactric unicode charaters to their ascii equivalents, most useful for creating permalinks
+* to_permalink -- convert all non-alphanumeric characters to dashes
+
+== Example
+
+>> "zażółć gęślą jaźń".to_ascii_brutal
+=> "zazolc gesla jazn"
+>> "zażółć gęślą jaźń".to_ascii_brutal.to_permalink
+=> "zazolc-gesla-jazn"
+
+== Copyright
+
+Copyright (c) 2009 Tomek "Tomash" Stachewicz (find me on http://tomash.wrug.eu), released under the MIT license
