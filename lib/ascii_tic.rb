@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 module AsciiTic
   # Removes HTML tags from a string. Allows you to specify some tags to be kept.
   def strip_html( allowed = [] )    
