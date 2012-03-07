@@ -70,7 +70,7 @@ module AsciiTic
     #permalink = permalink.to(max_size)
     
     # trim any leading or trailing separators
-    return permalink.gsub(/^\\#{separator}+|\\#{separator}+$/, '')
+    return permalink.gsub(/^\#{separator}+|\#{separator}+$/, '')
   end
   
 end
